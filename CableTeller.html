@@ -1,0 +1,44 @@
+<HTML>
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<script type="text/javascript" src="CableTeller.js"></script>
+<Link rel=stylesheet href="CableTeller.css" type="text/css">
+</style>
+</head>
+<title>Cable Teller</title>
+<h2>Cable Teller</h2>
+
+<table border="0">
+<tr>
+<td><select id="combo">
+  <option value="RG-6">RG-6</option>
+  <option value="RG-59">RG-59</option>
+  <option value="RG-11">RG-11</option>
+</select> </td>
+<td><b>Line In</b></td>
+<td><b>Line Out</b></td>
+</tr>
+<tr>
+<td><b>50 MHz</b></td>
+<td><input type="number" id="inLow"/>
+<font size="1">dBmV</font></td>
+<td><input type="number" id="outLow"/>
+<font size="1">dBmV</font></td>
+</tr>
+<tr>
+<td><b>700 MHz</b></td>
+<td><input type="number" id="inHigh"/>
+<font size="1">dBmV</font></td>
+<td><input type="number" id="outHigh"/>
+<font size="1">dBmV</font></td>
+</tr>
+</table>
+
+<br>
+
+<button id="btn" value="Submit" onclick="printout()">Submit</button>
+
+<p id="result"></p>
+<br>
+</html>
